@@ -12,11 +12,11 @@ const ResumeDisplay = () => {
   const pdfPath = 'Resume-Brianna-Y.pdf';
   
   return (
-    <div style={{ maxWidth: '100%', display: 'flex', justifyContent: 'center' }}>
     <div className='text-[#24252A] mx-auto text-center'>
-      <iframe src={pdfPath} title="Resume" width="100%" height="600px"></iframe>
+    <div style={{ maxWidth: '100%', display: 'flex', justifyContent: 'center' }}>
+      <iframe src={pdfPath} title="Resume" width="100%" height="100%" style={{ minHeight: '600px' }}></iframe>
     </div>
-   </div> 
+  </div>
   );
 };
 
