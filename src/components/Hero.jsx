@@ -22,7 +22,7 @@ const Hero = () => {
           development, data analytics, and machine learning, dedicated to 
           crafting creative solutions that shape the future of technology.
           </p>
-          <img src={coding} alt="" className="w-full max-w-md mx-auto mt-6" style={{ width: '100%', height: 'auto' }} />
+          <img src={coding} alt="" className="w-full max-w-md mx-auto mt-6 items-center" style={{ width: '100%', height: 'auto' }} />
 
         </div>
       </div>
