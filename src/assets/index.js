@@ -20,7 +20,7 @@ import mysql from "./tech/mysql.png"
 
 import MLFin from "./MLFin.png";
 import MLRetail from "./MLRetail.png";
-import tripguide from "./tripguide.png";
+import MLHealthC from "./MLHealthC.png";
 
 export {
   logo,
@@ -44,5 +44,5 @@ export {
 
   MLFin,
   MLRetail,
-  tripguide,
+  MLHealthC,
 };
