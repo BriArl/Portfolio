@@ -16,7 +16,7 @@ import {
  
   MLFin,
   MLRetail,
-  tripguide,
+  MLHealthC,
   
   python,
   mysql,
@@ -173,6 +173,27 @@ const projects = [
     image: MLRetail,
     source_code_link: "https://github.com/BriArl/ML-PredictingCustomerBehavior",
   },
+  {
+  name: "ML In Health Care",
+  description:
+    "Welcome to the Machine Learning in Healthcare repository! This project showcases the application of machine learning techniques to healthcare data analysis through two informative demos",
+  tags: [
+    {
+      name: "Python",
+      color: "",
+    },
+    {
+      name: "ML",
+      color: "",
+    },
+    {
+      name: "data analysis",
+      color: "",
+    },
+  ],
+  image: MLHealthC,
+  source_code_link: "https://github.com/BriArl/ML-MedicalField",
+}
   /*{
     name: "",
     description:
