@@ -21,6 +21,7 @@ import mysql from "./tech/mysql.png"
 import MLFin from "./MLFin.png";
 import MLRetail from "./MLRetail.png";
 import MLHealthC from "./MLHealthC.png";
+import PyHana from "./PyHana.png";
 
 export {
   logo,
@@ -45,4 +46,5 @@ export {
   MLFin,
   MLRetail,
   MLHealthC,
+  PyHana,
 };
