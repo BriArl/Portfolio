@@ -51,12 +51,9 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='text-[#24252A] mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-      As a dedicated software engineering student, I am on an exciting journey to delve deep into the 
-      world of technology. With a strong passion for backend development, data analytics, and machine 
-      learning, I am driven to explore and master these dynamic fields. Curiosity fuels my desire to 
-      build innovative solutions that have the power to shape the future. I believe that the fusion 
-      of code and creativity holds limitless potential, and I am committed to honing my skills to 
-      contribute meaningfully to the ever-evolving landscape of technology.
+      Motivated software engineer with hands-on experience in backend development, Java programming, and database management. 
+      I have a solid understanding of Agile practices and have engaged in various IT projects, including SAP research and Spring Boot API development. 
+      I’m excited to tackle new challenges and contribute to innovative solutions in the tech industry.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
