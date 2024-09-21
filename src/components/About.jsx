@@ -51,9 +51,8 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='text-[#24252A] mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-      Motivated software engineer with hands-on experience in backend development, Java programming, and database management. 
-      I have a solid understanding of Agile practices and have engaged in various IT projects, including SAP research and Spring Boot API development. 
-      I’m excited to tackle new challenges and contribute to innovative solutions in the tech industry.
+      I am a software engineer with experience in system administration and Java programming, focusing on backend development. Through my projects and internships, I've gained practical skills and a solid understanding of software development. 
+      I’m committed to improving my abilities and contributing to the tech field.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
