@@ -49,11 +49,11 @@ const services = [
     icon: backend,
   },
   {
-    title: "Data Engineering",
+    title: "Data Management",
     icon: dataeng,
   },
   {
-    title: "Machine Learning",
+    title: "Software Testing",
     icon: ml,
   },
 ];
