@@ -18,9 +18,9 @@ const Hero = () => {
             Hi, I'm Brianna
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-[#25252A]-100`}>
-          I'm an aspiring software engineer deeply passionate about backend 
-          development, data analytics, and machine learning, dedicated to 
-          crafting creative solutions that shape the future of technology.
+          Motivated software engineer with hands-on experience in backend development, Java programming, and database management. 
+          I have a solid understanding of Agile practices and have engaged in various IT projects, including SAP research and Spring Boot API development. 
+          I’m excited to tackle new challenges and contribute to innovative solutions in the tech industry.
           </p>
           <br/>
           <img src={coding} alt="" className="w-full max-w-md mx-auto mt-6 items-center" style={{ width: '100%', height: 'auto' }} />
