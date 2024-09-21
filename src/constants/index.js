@@ -17,7 +17,6 @@ import {
   MLFin,
   MLRetail,
   MLHealthC,
-  PyHana,
   
   python,
   mysql,
@@ -194,29 +193,7 @@ const projects = [
   ],
   image: MLHealthC,
   source_code_link: "https://github.com/BriArl/ML-MedicalField",
-},
-
-  {
-    name: "Python-SAP HANA",
-    description:
-      "This project demonstrates Python's integration with SAP HANA utilizing the SAP HANA client. It provides functionalities to establish connections, create users, tables, and import data using SAP HANA HDBSQL.",
-    tags: [
-      {
-        name: "Python",
-        color: "",
-      },
-      {
-        name: "SAP",
-        color: "",
-      },
-      {
-        name: "SQL",
-        color: "",
-      },
-    ],
-    image: PyHana,
-    source_code_link: "https://github.com/BriArl/SAP-HANA-Python-Interface/tree/main",
-  }
+}
 
 
   /*{
