@@ -8,7 +8,7 @@ const experiences = [
   {
     title: "Software Engineer Intern",
     company: "Raymond James",
-    logo: "public/Raymond-James-logo-2.jpg",
+    logo: "/Raymond-James-logo-2.jpg",
     date: "July 2024 - October 2024",
     summary: "Contributed to enhancements and functionality improvements in Model Management and Drift applications. Collaborated with senior developers to understand application design and API layers while managing repository changes through Azure DevOps.",
   },
@@ -22,7 +22,7 @@ const experiences = [
   {
     title: "Software Engineer Intern",
     company: "Year Up & Pluralsight",
-    logo: "public/YU-logo.jpg",
+    logo: "/YU-logo.jpg",
     date: "January 2023 - December 2023",
     summary: "Engaged in immersive internship focused on core software engineering skills, particularly in Java and the Spring Framework. Gained hands-on experience with database management and collaborated on projects using Git.",
   },
