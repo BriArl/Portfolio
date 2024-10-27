@@ -29,14 +29,6 @@ const experiences = [
 ];
 
 const Experience = () => {
-  const handleDownload = () => {
-    const link = document.createElement("a");
-    link.href = 'Resume-Brianna-Y.pdf'; // Path to your PDF file
-    link.download = 'Resume-Brianna-Y.pdf'; // File name for download
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
 
   return (
     <div className="bg-[#24252A] p-6 rounded-lg">
@@ -71,12 +63,7 @@ const Experience = () => {
       </div>
 
       <div className="text-center mt-10">
-        <button
-          onClick={handleDownload}
-          className="bg-[#dbdad5] text-[#24252A] py-2 px-6 rounded-lg hover:bg-gray-300 transition duration-200 font-bold" // Added font-bold class
-        >
-          Download Resume
-        </button>
+
       </div>
     </div>
   );
