@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { Canvas, useLoader } from '@react-three/fiber';
@@ -6,13 +5,9 @@ import { OrbitControls } from '@react-three/drei';
 import { TextureLoader, MeshStandardMaterial } from 'three';
 import { FBXLoader } from 'three/examples/jsm/loaders/FBXLoader';
 
-const Model = ({ setLoading }) => {
+const Model = () => {
   const fbxPath = '/pc-model/uploads_files_1910147_Macintosh_3_3.fbx';
-
-  // Use a loading state to track when all textures and models are loaded
-  const model = useLoader(FBXLoader, fbxPath, (loader) => {
-    loader.manager.onLoad = () => setLoading(false); // Set loading to false when the model is fully loaded
-  });
+  const model = useLoader(FBXLoader, fbxPath);
 
   const baseColorTexture = useLoader(TextureLoader, '/pc-model/Macintosh_3_3_Macintosh_01_BaseColor.png');
   const emissiveTexture = useLoader(TextureLoader, '/pc-model/Macintosh_3_3_Macintosh_01_Emissive.png');
@@ -36,11 +31,11 @@ const Model = ({ setLoading }) => {
 };
 
 const Hero = () => {
-  const [loading, setLoading] = useState(true);
-
   return (
-    <section className="relative w-full h-screen mx-auto mb-20">
-      <div className={`absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}>
+    <section className="relative w-full h-screen mx-auto mb-20"> {/* Added bottom margin here */}
+      <div
+        className={`absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
+      >
         <div className="flex flex-col justify-center items-center mt-5">
           <div className="w-5 h-5 rounded-full bg-[#24252a]" />
           <div className="w-1 sm:h-80 h-40 line-gradient" />
@@ -56,27 +51,20 @@ const Hero = () => {
             I’m excited to tackle new challenges and contribute to innovative solutions in the tech industry.
           </p>
           <br />
-
-          {/* Loading message */}
-          {loading ? (
-            <div className="w-full h-[500px] flex justify-center items-center">
-              <p className="text-lg font-semibold text-[#25252A]">Loading model...</p>
-            </div>
-          ) : (
-            <div className="w-full h-[500px] flex justify-center">
-              <Canvas>
-                <ambientLight intensity={1.2} />
-                <directionalLight position={[0, 10, 5]} intensity={0.8} />
-                <pointLight position={[5, 5, 5]} intensity={0.6} />
-                <Model setLoading={setLoading} />
-                <OrbitControls
-                  enablePan={false}
-                  maxPolarAngle={Math.PI / 2}
-                  minPolarAngle={Math.PI / 2}
-                />
-              </Canvas>
-            </div>
-          )}
+          {/* Wrap Canvas in a wider div for expanded model space */}
+          <div className="w-full h-[500px] flex justify-center">
+            <Canvas>
+              <ambientLight intensity={1.2} />
+              <directionalLight position={[0, 10, 5]} intensity={0.8} />
+              <pointLight position={[5, 5, 5]} intensity={0.6} />
+              <Model />
+              <OrbitControls
+                enablePan={false}
+                maxPolarAngle={Math.PI / 2}
+                minPolarAngle={Math.PI / 2}
+              />
+            </Canvas>
+          </div>
         </div>
       </div>
 
@@ -102,6 +90,5 @@ const Hero = () => {
 };
 
 export default Hero;
-
 
 
