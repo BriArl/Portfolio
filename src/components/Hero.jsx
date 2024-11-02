@@ -12,7 +12,6 @@ const Model = () => {
   // Load each texture
   const baseColorTexture = useLoader(TextureLoader, '/pc-model/Macintosh_3_3_Macintosh_01_BaseColor.png');
   const emissiveTexture = useLoader(TextureLoader, '/pc-model/Macintosh_3_3_Macintosh_01_Emissive.png');
-  // const heightTexture = useLoader(TextureLoader, '/pc-model/Macintosh_3_3_Macintosh_01_Height.png');
   const metallicTexture = useLoader(TextureLoader, '/pc-model/Macintosh_3_3_Macintosh_01_Metallic.png');
   const normalTexture = useLoader(TextureLoader, '/pc-model/Macintosh_3_3_Macintosh_01_Normal.png');
   const roughnessTexture = useLoader(TextureLoader, '/pc-model/Macintosh_3_3_Macintosh_01_Roughness.png');
@@ -23,7 +22,6 @@ const Model = () => {
       child.material = new MeshStandardMaterial({
         map: baseColorTexture,
         emissiveMap: emissiveTexture,
-        // displacementMap: heightTexture,
         metalnessMap: metallicTexture,
         normalMap: normalTexture,
         roughnessMap: roughnessTexture,
@@ -55,7 +53,7 @@ const Hero = () => {
           <br />
 
           {/* Container for the Canvas */}
-          <div className="mt-8 mb-16" style={{ height: '600px', width: '100%' }}>
+          <div className="mt-8 mb-16" style={{ height: '600px', width: '100%', overflow: 'hidden' }}>
             <Canvas>
               <ambientLight intensity={1.2} />
               <directionalLight position={[0, 10, 5]} intensity={0.8} />
@@ -90,5 +88,6 @@ const Hero = () => {
 };
 
 export default Hero;
+
 
 
