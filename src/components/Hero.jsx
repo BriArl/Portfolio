@@ -32,7 +32,7 @@ const Model = () => {
 
 const Hero = () => {
   return (
-    <section className="relative w-full h-screen mx-auto mb-20"> {/* Added bottom margin here */}
+    <section className="relative w-full h-screen mx-auto pb-20"> {/* Changed from mb-20 to pb-20 */}
       <div
         className={`absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
@@ -90,5 +90,7 @@ const Hero = () => {
 };
 
 export default Hero;
+
+
 
 
