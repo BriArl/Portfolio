@@ -52,8 +52,8 @@ const Hero = () => {
           </p>
           <br />
 
-          {/* Container for the Canvas */}
-          <div className="relative mt-8 mb-16" style={{ height: '600px', width: '100%' }}>
+          {/* Container for the Canvas with added padding */}
+          <div className="relative mt-8 mb-16" style={{ height: '700px', width: '100%' }}>
             <Canvas style={{ height: '100%' }}>
               <ambientLight intensity={1.2} />
               <directionalLight position={[0, 10, 5]} intensity={0.8} />
