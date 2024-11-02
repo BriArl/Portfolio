@@ -1,10 +1,9 @@
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import { Canvas, useLoader, useFrame } from '@react-three/fiber';
+import { Canvas, useLoader } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import { TextureLoader, MeshStandardMaterial } from 'three';
 import { FBXLoader } from 'three/examples/jsm/loaders/FBXLoader';
-import { useRef } from 'react';
 
 const Model = () => {
   const fbxPath = '/pc-model/uploads_files_1910147_Macintosh_3_3.fbx';
@@ -28,14 +27,12 @@ const Model = () => {
     }
   });
 
-  return <primitive object={model} scale={0.5} position={[0, -1, 0]} />;
+  return <primitive object={model} scale={1.1} position={[0, -1, 0]} />; {/* Adjusted position upwards again */}
 };
 
 const Hero = () => {
-  const cameraRef = useRef(); // Create a ref for the camera
-
   return (
-    <section className="relative w-full h-screen mx-auto mb-16"> {/* Bottom margin for separation */}
+    <section className="relative w-full h-screen mx-auto mb-16"> {/* Kept bottom margin for separation */}
       <div className={`absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}>
         <div className="flex flex-col justify-center items-center mt-5">
           <div className="w-5 h-5 rounded-full bg-[#24252a]" />
@@ -43,7 +40,7 @@ const Hero = () => {
         </div>
 
         <div>
-          <h1 className={`${styles.heroHeadText} text-[#25252A]`}>
+          <h1 className={`${styles.heroHeadText} text-[#25252A]`}> {/* Keeping original text color */}
             Hi, I'm Brianna
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-[#25252A]`}>
@@ -52,14 +49,13 @@ const Hero = () => {
             I’m excited to tackle new challenges and contribute to innovative solutions in the tech industry.
           </p>
           <br />
-          <div className="flex justify-center items-center mt-6" style={{ height: '400px', width: '800px', margin: '0 auto' }}> {/* Centering the model */}
+          <div className="flex justify-center items-center mt-6" style={{ height: '400px', width: '800px', margin: '0 auto' }}> {/* Keeping model container dimensions */}
             <Canvas>
               <ambientLight intensity={1.2} />
               <directionalLight position={[0, 10, 5]} intensity={0.8} />
               <pointLight position={[5, 5, 5]} intensity={0.6} />
-              <perspectiveCamera ref={cameraRef} position={[0, 1, 3]} /> {/* Set initial camera position */}
               <Model />
-              <OrbitControls target={[0, -1, 0]} /> {/* Adjust target if necessary */}
+              <OrbitControls />
             </Canvas>
           </div>
         </div>
@@ -87,10 +83,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
-
-
-
-
-
-
