@@ -44,9 +44,10 @@ const Hero = () => {
             Hi, I'm Brianna
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-[#25252A]`}>
-            Motivated software engineer with hands-on experience in backend development, Java programming, and database management.
-            I have a solid understanding of Agile practices and have engaged in various IT projects, including SAP research and Spring Boot API development.
-            I’m excited to tackle new challenges and contribute to innovative solutions in the tech industry.
+          I am a motivated software engineer specializing in backend development and Java programming, 
+          with practical experience in database management and system administration. Grounded in Agile 
+          practices, I have contributed to diverse IT projects, including SAP research and Spring Boot 
+          API development. I’m eager to embrace new challenges and contribute to innovative solutions.
           </p>
           <br />
           <div className="flex justify-center items-center mt-6" style={{ height: '400px', width: '800px', margin: '0 auto' }}> {/* Keeping model container dimensions */}

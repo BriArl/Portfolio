@@ -51,8 +51,8 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='text-[#24252A] mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-      I am a software engineer with experience in system administration and Java programming, focusing on backend development. Through my projects and internships, I've gained practical skills and a solid understanding of software development. 
-      I’m committed to improving my abilities and contributing to the tech field.
+With a focus on backend development and system administration, I have honed my skills through internships and hands-on projects. 
+I am committed to ongoing learning and strive to make meaningful contributions to the tech field, leveraging my practical experience to tackle problems.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
