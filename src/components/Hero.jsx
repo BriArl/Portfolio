@@ -9,17 +9,21 @@ const Model = () => {
   const fbxPath = '/pc-model/uploads_files_1910147_Macintosh_3_3.fbx';
   const model = useLoader(FBXLoader, fbxPath);
 
+  // Load each texture
   const baseColorTexture = useLoader(TextureLoader, '/pc-model/Macintosh_3_3_Macintosh_01_BaseColor.png');
   const emissiveTexture = useLoader(TextureLoader, '/pc-model/Macintosh_3_3_Macintosh_01_Emissive.png');
+  // const heightTexture = useLoader(TextureLoader, '/pc-model/Macintosh_3_3_Macintosh_01_Height.png');
   const metallicTexture = useLoader(TextureLoader, '/pc-model/Macintosh_3_3_Macintosh_01_Metallic.png');
   const normalTexture = useLoader(TextureLoader, '/pc-model/Macintosh_3_3_Macintosh_01_Normal.png');
   const roughnessTexture = useLoader(TextureLoader, '/pc-model/Macintosh_3_3_Macintosh_01_Roughness.png');
 
+  // Apply textures to the model's materials
   model.traverse((child) => {
     if (child.isMesh) {
       child.material = new MeshStandardMaterial({
         map: baseColorTexture,
         emissiveMap: emissiveTexture,
+        // displacementMap: heightTexture,
         metalnessMap: metallicTexture,
         normalMap: normalTexture,
         roughnessMap: roughnessTexture,
@@ -32,17 +36,15 @@ const Model = () => {
 
 const Hero = () => {
   return (
-    <section className="relative w-full h-screen mx-auto pb-20"> {/* Changed from mb-20 to pb-20 */}
-      <div
-        className={`absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
-      >
+    <section className="relative w-full h-screen mx-auto">
+      <div className={`absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}>
         <div className="flex flex-col justify-center items-center mt-5">
           <div className="w-5 h-5 rounded-full bg-[#24252a]" />
           <div className="w-1 sm:h-80 h-40 line-gradient" />
         </div>
 
         <div>
-          <h1 className={`${styles.heroHeadText}`}>
+          <h1 className={styles.heroHeadText}>
             Hi, I'm Brianna
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-[#25252A]-100`}>
@@ -51,20 +53,13 @@ const Hero = () => {
             I’m excited to tackle new challenges and contribute to innovative solutions in the tech industry.
           </p>
           <br />
-          {/* Wrap Canvas in a wider div for expanded model space */}
-          <div className="w-full h-[500px] flex justify-center">
-            <Canvas>
-              <ambientLight intensity={1.2} />
-              <directionalLight position={[0, 10, 5]} intensity={0.8} />
-              <pointLight position={[5, 5, 5]} intensity={0.6} />
-              <Model />
-              <OrbitControls
-                enablePan={false}
-                maxPolarAngle={Math.PI / 2}
-                minPolarAngle={Math.PI / 2}
-              />
-            </Canvas>
-          </div>
+          <Canvas>
+            <ambientLight intensity={1.2} />
+            <directionalLight position={[0, 10, 5]} intensity={0.8} />
+            <pointLight position={[5, 5, 5]} intensity={0.6} />
+            <Model />
+            <OrbitControls />
+          </Canvas>
         </div>
       </div>
 
@@ -90,7 +85,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
-
-
-
