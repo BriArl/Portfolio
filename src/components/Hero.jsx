@@ -53,13 +53,18 @@ const Hero = () => {
             I’m excited to tackle new challenges and contribute to innovative solutions in the tech industry.
           </p>
           <br />
-          <Canvas>
-            <ambientLight intensity={1.2} />
-            <directionalLight position={[0, 10, 5]} intensity={0.8} />
-            <pointLight position={[5, 5, 5]} intensity={0.6} />
-            <Model />
-            <OrbitControls />
-          </Canvas>
+
+          {/* Container for the Canvas */}
+          <div className="mt-8 mb-16" style={{ height: '600px', width: '100%' }}>
+            <Canvas>
+              <ambientLight intensity={1.2} />
+              <directionalLight position={[0, 10, 5]} intensity={0.8} />
+              <pointLight position={[5, 5, 5]} intensity={0.6} />
+              <Model />
+              <OrbitControls />
+            </Canvas>
+          </div>
+
         </div>
       </div>
 
@@ -85,3 +90,5 @@ const Hero = () => {
 };
 
 export default Hero;
+
+
