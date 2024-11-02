@@ -53,8 +53,8 @@ const Hero = () => {
           <br />
 
           {/* Container for the Canvas */}
-          <div className="mt-8 mb-16" style={{ height: '600px', width: '100%', overflow: 'hidden' }}>
-            <Canvas>
+          <div className="mt-8 mb-16" style={{ height: '600px', width: '100%', position: 'relative', overflow: 'hidden' }}>
+            <Canvas style={{ height: '100%' }}>
               <ambientLight intensity={1.2} />
               <directionalLight position={[0, 10, 5]} intensity={0.8} />
               <pointLight position={[5, 5, 5]} intensity={0.6} />
@@ -88,6 +88,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
-
-
