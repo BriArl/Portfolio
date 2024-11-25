@@ -5,31 +5,6 @@ import { OrbitControls } from '@react-three/drei';
 import { TextureLoader, MeshStandardMaterial } from 'three';
 import { FBXLoader } from 'three/examples/jsm/loaders/FBXLoader';
 
-const Model = () => {
-  const fbxPath = '/pc-model/uploads_files_1910147_Macintosh_3_3.fbx';
-  const model = useLoader(FBXLoader, fbxPath);
-
-  const baseColorTexture = useLoader(TextureLoader, '/pc-model/Macintosh_3_3_Macintosh_01_BaseColor.png');
-  const emissiveTexture = useLoader(TextureLoader, '/pc-model/Macintosh_3_3_Macintosh_01_Emissive.png');
-  const metallicTexture = useLoader(TextureLoader, '/pc-model/Macintosh_3_3_Macintosh_01_Metallic.png');
-  const normalTexture = useLoader(TextureLoader, '/pc-model/Macintosh_3_3_Macintosh_01_Normal.png');
-  const roughnessTexture = useLoader(TextureLoader, '/pc-model/Macintosh_3_3_Macintosh_01_Roughness.png');
-
-  model.traverse((child) => {
-    if (child.isMesh) {
-      child.material = new MeshStandardMaterial({
-        map: baseColorTexture,
-        emissiveMap: emissiveTexture,
-        metalnessMap: metallicTexture,
-        normalMap: normalTexture,
-        roughnessMap: roughnessTexture,
-      });
-    }
-  });
-
-  return <primitive object={model} scale={1.1} position={[0, -1, 0]} />; {/* Adjusted position upwards again */}
-};
-
 const Hero = () => {
   return (
     <section className="relative w-full h-screen mx-auto mb-16"> {/* Kept bottom margin for separation */}
@@ -44,21 +19,9 @@ const Hero = () => {
             Hi, I'm Brianna
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-[#25252A]`}>
-          I am a motivated software engineer specializing in backend development and Java programming, 
-          with practical experience in database management and system administration. Grounded in Agile 
-          practices, I have contributed to diverse IT projects, including SAP research and Spring Boot 
-          API development. I’m eager to embrace new challenges and contribute to innovative solutions.
+          Hi, I’m a junior developer with a unique blend of retail and tech experience. After years in the 
+          retail world, I’ve transitioned to tech, gaining hands-on skills in Java, SAP administration, and Agile teamwork. Now, I’m excited to bridge these passions—bringing tech innovation to retail to elevate customer experiences and streamline operations.
           </p>
-          <br />
-          <div className="flex justify-center items-center mt-6" style={{ height: '400px', width: '800px', margin: '0 auto' }}> {/* Keeping model container dimensions */}
-            <Canvas>
-              <ambientLight intensity={1.2} />
-              <directionalLight position={[0, 10, 5]} intensity={0.8} />
-              <pointLight position={[5, 5, 5]} intensity={0.6} />
-              <Model />
-              <OrbitControls />
-            </Canvas>
-          </div>
         </div>
       </div>
 
