@@ -19,7 +19,7 @@ const Hero = () => {
             Hi, I'm Brianna
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-[#25252A]`}>
-          Hi, I’m a junior developer with a unique blend of skills shaped by experience in both customer-facing and technical roles. I’ve developed hands-on expertise in Java, SAP administration, and Agile teamwork, and I’m passionate about leveraging technology to solve complex challenges and create seamless, efficient systems. My diverse background allows me to approach problems with fresh perspectives and innovative solutions in the tech industry.
+          I’m a junior developer with a unique blend of skills shaped by experience in both customer-facing and technical roles. I’ve developed hands-on expertise in Java, SAP administration, and Agile teamwork, and I’m passionate about leveraging technology to solve complex challenges. My diverse background allows me to approach problems with fresh perspectives and innovative solutions in the tech industry.
           </p>
         </div>
       </div>
