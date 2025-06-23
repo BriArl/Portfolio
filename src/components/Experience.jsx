@@ -10,21 +10,21 @@ const experiences = [
     company: "Raymond James",
     logo: "/Raymond-James-logo-2.jpg",
     date: "July 2024 - October 2024",
-    summary: "Contributed to enhancements and functionality improvements in Model Management and Drift applications. Collaborated with senior developers to understand application design and API layers while managing repository changes through Azure DevOps.",
+    summary: "Contributed to software development and enhancement of Model Management and Drift applications within the portfolio management domain. Collaborated with senior developers to align with Java best practices, upgraded Spring Boot versions to address security vulnerabilities, and managed CI/CD pipelines using Azure DevOps, Jenkins, and IntelliJ. Led deployments across environments and ensured build stability through effective dependency and version management."
   },
   {
     title: "SAP BASIS Administrator Intern",
     company: "MKS Instruments",
     logo: "/mks-logo.png",
     date: "January 2024 - June 2024",
-    summary: "Reviewed and edited key process documents for clarity and accuracy. Secured SAP access permissions and upgraded ST-PI components while assisting with data migration and SAP administration tasks.",
+    summary: "Gained hands-on experience with SAP system administration, including system upgrades, configuration, and change management processes. Assisted with plugin upgrades, data migration, and SAP note application while collaborating with senior admins to ensure smooth transitions across development and QA environments. Contributed to process documentation and directory setup to support system readiness and maintain operational consistency.",
   },
   {
     title: "Software Engineer Intern",
     company: "Year Up & Pluralsight",
     logo: "/YU-logo.jpg",
     date: "January 2023 - December 2023",
-    summary: "Engaged in immersive internship focused on core software engineering skills, particularly in Java and the Spring Framework. Gained hands-on experience with database management and collaborated on projects using Git.",
+    summary: "Developed web and desktop applications using Java and the Spring Framework, applying object-oriented design, RESTful APIs, and dependency injection. Gained hands-on experience with SQL for database design and optimization, while using Git/GitHub for version control and collaboration. Strengthened core software development skills, including data structures, algorithms, and application lifecycle management.",
   },
 ];
 
