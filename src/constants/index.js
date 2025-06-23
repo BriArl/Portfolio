@@ -17,6 +17,7 @@ import {
   MLFin,
   MLRetail,
   MLHealthC,
+  PortfolioThumbnail,
   
   python,
   mysql,
