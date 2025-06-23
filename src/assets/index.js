@@ -21,6 +21,7 @@ import mysql from "./tech/mysql.png"
 import MLFin from "./MLFin.png";
 import MLRetail from "./MLRetail.png";
 import MLHealthC from "./MLHealthC.png";
+import PortfolioThumbnail from "./PortfolioThumbnail.png"
 
 
 export {
@@ -46,5 +47,6 @@ export {
   MLFin,
   MLRetail,
   MLHealthC,
+  PortfolioThumbnail,
 
 };
