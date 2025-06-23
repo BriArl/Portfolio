@@ -215,7 +215,7 @@ const projects = [
     ],
     image: PortfolioThumbnail,
     source_code_link: "https://github.com/Portfolio",
-  }
+  },
 
 
   /*{
