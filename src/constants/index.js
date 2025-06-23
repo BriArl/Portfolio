@@ -201,15 +201,15 @@ const projects = [
       "Built and maintained a responsive portfolio site using React and modern frontend practices to showcase projects and professional milestones.",
     tags: [
       {
-        name: "Tailwind",
+        name: "tailwind",
         color: "",
       },
       {
-        name: "React",
+        name: "reactjs",
         color: "",
       },
       {
-        name: "HTML",
+        name: "html",
         color: "",
       },
     ],
