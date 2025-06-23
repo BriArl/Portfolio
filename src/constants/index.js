@@ -198,7 +198,7 @@ const projects = [
 {
     name: "Portfolio Website",
     description:
-      "Built and maintained a responsive portfolio site using React and modern frontend practices to showcase projects and professional milestones.",
+      "Built and a responsive portfolio site using React and modern frontend practices to showcase projects and professional milestones.",
     tags: [
       {
         name: "tailwind",
