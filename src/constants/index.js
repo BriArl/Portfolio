@@ -193,7 +193,28 @@ const projects = [
   ],
   image: MLHealthC,
   source_code_link: "https://github.com/BriArl/ML-MedicalField",
-}
+},
+{
+    name: "Portfolio",
+    description:
+      "Built and maintained a responsive portfolio site using React and modern frontend practices to showcase projects and professional milestones.",
+    tags: [
+      {
+        name: "HTML",
+        color: "",
+      },
+      {
+        name: "Tailwind CSS",
+        color: "",
+      },
+      {
+        name: "React",
+        color: "",
+      },
+    ],
+    image: PortfolioThumbnail,
+    source_code_link: "https://github.com/Portfolio",
+  }
 
 
   /*{
