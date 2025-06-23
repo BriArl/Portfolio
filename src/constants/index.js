@@ -196,20 +196,20 @@ const projects = [
   source_code_link: "https://github.com/BriArl/ML-MedicalField",
 },
 {
-    name: "Portfolio",
+    name: "Portfolio Website",
     description:
       "Built and maintained a responsive portfolio site using React and modern frontend practices to showcase projects and professional milestones.",
     tags: [
       {
-        name: "",
+        name: "Tailwind",
         color: "",
       },
       {
-        name: "",
+        name: "React",
         color: "",
       },
       {
-        name: "",
+        name: "HTML",
         color: "",
       },
     ],
