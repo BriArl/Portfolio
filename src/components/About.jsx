@@ -51,7 +51,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='text-[#24252A] mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-With a focus on fullstack development and system operations, I've built a strong foundation through internships and practical projects. I’m dedicated to continuous learning and growth, and I aim to contribute to impactful solutions by applying my technical skills to real-world challenges.  
+My experience spans full-stack development, system operations, and various technical roles gained through internships and practical projects. I’m committed to continuous learning and growth, aiming to apply my skills to create meaningful, impactful solutions that address real-world challenges.  
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
